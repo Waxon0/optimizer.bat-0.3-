@@ -23,7 +23,7 @@ setx GPU_MAX_HEAP_SIZE 100
 setx GPU_USE_SYNC_OBJECTS 1
 setx GPU_MAX_ALLOC_PERCENT 100
 setx GPU_SINGLE_ALLOC_PERCENT 100
-delays.reg
+regedit /s delays.reg
 goto main
 pause>nul
 
@@ -50,7 +50,7 @@ goto main_restart
 pause>nul
 
 :System
-SystemProfile.reg
+regedit /s SystemProfile.reg
 goto main
 
 :deltemp
